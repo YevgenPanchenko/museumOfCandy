@@ -27,6 +27,7 @@
 
     <title>Museum of Candy</title>
   </head>
+
   <body>
     <nav
       id="mainNavbar"
@@ -44,22 +45,142 @@
       <div class="collapse navbar-collapse" id="navLinks">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">ABOUT</a>
+            <a href="#" class="nav-link">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">TICKETS</a>
+            <a href="#" class="nav-link">TICKETS</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <section class="container-fluid px-0">
+      <div class="row align-items-center content">
+        <div class="col-lg-6">
+          <div
+            id="headingGroup"
+            class="text-white text-center d-none d-lg-block mt-5"
+          >
+            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="imgs/hand2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="imgs/milk.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+                id="img1"
+              />
+              <p class="lead">
+                Sweets as we know them today have been around since the 19th
+                century. Candy making has developed rapidly in the last hundred
+                years. Today people spend more than $7 billion a year on
+                chocolate. Halloween is the holiday with the highest candy
+                sales, about $2 billion is spent on candies during this holiday.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+                id="img1"
+              />
+              <p class="lead">
+                The word “candy” comes from ancient Indian Sanskrit. Khanda
+                means “a piece of sugar.” Years later, the Arabic version moved
+                one step closer with qandi. The Middle English word “candy”
+                began to be used in the late 13th century. Before sugar came
+                west, Egyptians used honey and made candy by adding figs, nuts,
+                dates and spices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="imgs/gumball.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="imgs/sprinkles.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+                id="img1"
+              />
+              <p class="lead">
+                When the technological advances and the availability of sugar
+                opened up the market in the 1830s, the candy business underwent
+                a drastic change. The new market was not only for the enjoyment
+                of the rich but also for the pleasure of the working class.
+                There was also an increasing market for children.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          const $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
